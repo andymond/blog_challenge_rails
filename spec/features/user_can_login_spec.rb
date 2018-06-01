@@ -10,7 +10,7 @@ describe 'as a user' do
     fill_in "password", with: "password"
     click_on "log in"
 
-    expect(current_path).to eq(dashboard_path)
-    expect(page).to have_content("welcome larry")
+    expect(current_path).to eq(dashboard_index_path)
+    expect(page).to have_content("Welcome larry")
   end
 end
