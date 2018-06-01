@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create]
   delete "/sessions", to: "sessions#destroy"
   resources :dashboard, only: [:index]
+  resources :posts, only: [:new, :create, :index]
 end
